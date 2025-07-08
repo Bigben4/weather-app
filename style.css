@@ -1,0 +1,98 @@
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif,serif;
+}
+
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --border-radius: 8px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color:var(--secondary-color);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.container{
+    max-width: 600px;
+    width: 40%;
+    background-color:var(--secondary-color);
+    border-radius:var(--border-radius);
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    height:50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.container form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.container form button:hover {
+    background-color: #357ABD;
+}
+
+.container #weather-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container #weather-result p {
+    margin: 5px 0;
+}
+
+.container #weather-result p strong {
+    color: var(--primary-color);
+}
+
+.container #weather-result p i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
