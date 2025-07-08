@@ -14,12 +14,16 @@
         <h1>Weather App</h1>
         <form id="weather-form">
             <input type="text" id="city" placeholder="Enter city name" required>
+            
             <button type="submit">Get Weather</button>
+
+            <i class="fas fa-spinner fa-spin" id="loading-icon" style="display: none;"></i>
+            <i class="fas fa-exclamation-triangle" id="error-icon" style="display: none;"></i>
         </form>
     </div>
     
         <div id="weather-result"></div>
-
+        
 
 
     <script src="app.js"></script>
